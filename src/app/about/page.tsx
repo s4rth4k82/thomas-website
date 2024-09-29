@@ -74,10 +74,10 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-12 text-center">Our Leadership</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { name: "His Excellency Most Rev. Dr. Thomas Mar Anthonios", role: "Patron", image: "/images/leader1.jpg" },
+              { name: "His Excellency Most Rev. Dr. Thomas Mar Anthonios", role: "Patron", image: "/images/Gurgaon.jpg" },
               { name: "Rev. Dr. Reni Mudampally", role: "Director", image: "/images/Principal.jpg" },
-              { name: "Rev. Fr. Jinu Arappurackal", role: "Bursar", image: "/images/leader3.jpg" },
-              { name: "Mrs. Betty Jacob", role: "Principal", image: "/images/leader4.jpg" },
+              { name: "Rev. Fr. Jinu Arappurackal", role: "Bursar", image: "/images/Fr.Jinu.jpg" },
+              { name: "Mrs. Betty Jacob", role: "Principal", image: "/images/Gurgaon.jpg" },
             ].map((leader, index) => (
               <div key={index} className="text-center hover-grow">
                 <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">
