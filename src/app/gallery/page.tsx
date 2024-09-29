@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Slider from "react-slick";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaTimes } from "react-icons/fa";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
