@@ -68,7 +68,11 @@ const categories = [...new Set(images.map((img) => img.category))];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
-  const [modalImage, setModalImage] = useState(null);
+  const [modalImage, setModalImage] = useState({
+    src: '',
+    alt: '',
+    category: '',
+  });
 
   const carouselSettings = {
     dots: true,
@@ -82,14 +86,20 @@ export default function GalleryPage() {
     // prevArrow: <SamplePrevArrow />,
   };
 
-  const openModal = (image) => {
+
+
+  const openModal = (image: typeof images[0]) => {
     console.log(image);
     setModalImage(image);
     console.log(modalImage);
   };
 
   const closeModal = () => {
-    setModalImage(null);
+    setModalImage({
+      src: '',
+      alt: '',
+      category: '',
+    });
   };
 
   return (
