@@ -64,15 +64,17 @@ const images = [
   { src: "/images/sports-2.jpg", alt: "Yoga session", category: "Sports" },
 ];
 
+type ImageType = {
+  src?: string;
+  alt?: string;
+  category?: string;
+};
+
 const categories = [...new Set(images.map((img) => img.category))];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState(categories[0]);
-  const [modalImage, setModalImage] = useState({
-    src: '',
-    alt: '',
-    category: '',
-  });
+  const [modalImage, setModalImage] = useState<ImageType | null>(null); // Initial state is null
 
   const carouselSettings = {
     dots: true,
@@ -82,24 +84,18 @@ export default function GalleryPage() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
   };
 
-
-
-  const openModal = (image: typeof images[0]) => {
-    console.log(image);
-    setModalImage(image);
-    console.log(modalImage);
+  const openModal = (image: (typeof images)[0]) => {
+    setModalImage({
+      src: image.src,
+      alt: image.alt,
+      category: image.category,
+    });
   };
 
   const closeModal = () => {
-    setModalImage({
-      src: '',
-      alt: '',
-      category: '',
-    });
+    setModalImage(null); // Ensure modal closes by setting to null
   };
 
   return (
@@ -232,16 +228,20 @@ export default function GalleryPage() {
               </button>
               <div className="relative w-full h-[60vh] md:h-[70vh]">
                 <Image
-                  src={modalImage.src}
-                  alt={modalImage.alt}
+                  src={modalImage?.src || "/path/to/placeholder.jpg"} // Fallback image
+                  alt={modalImage?.alt || "Image description not available"} // Fallback alt text
                   layout="fill"
                   objectFit="contain"
                   className="p-4"
                 />
               </div>
-              <div className="p-6 bg-white">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">{modalImage.category}</h3>
-                <p className="text-gray-600">{modalImage.alt}</p>
+              <div className="p-6 bg-gray-100">
+                <h4 className="text-2xl font-semibold mb-2">
+                  {modalImage?.category || "Category"}
+                </h4>
+                <p className="text-gray-600">
+                  {modalImage?.alt || "No description available"}
+                </p>
               </div>
             </motion.div>
           </motion.div>
@@ -250,41 +250,3 @@ export default function GalleryPage() {
     </div>
   );
 }
-
-// function SampleNextArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={`${className} before:content-[''] z-10`}
-//       style={{
-//         ...style,
-//         display: "block",
-//         background: "rgba(0,0,0,0.5)",
-//         borderRadius: "50%",
-//         padding: "10px",
-//       }}
-//       onClick={onClick}
-//     >
-//       <FaChevronRight className="text-white" />
-//     </div>
-//   );
-// }
-
-// function SamplePrevArrow(props) {
-//   const { className, style, onClick } = props;
-//   return (
-//     <div
-//       className={`${className} before:content-[''] z-10`}
-//       style={{
-//         ...style,
-//         display: "block",
-//         background: "rgba(0,0,0,0.5)",
-//         borderRadius: "50%",
-//         padding: "10px",
-//       }}
-//       onClick={onClick}
-//     >
-//       <FaChevronLeft className="text-white" />
-//     </div>
-//   );
-// }
