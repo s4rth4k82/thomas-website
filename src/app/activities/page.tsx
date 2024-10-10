@@ -10,7 +10,7 @@ export default function ActivitiesPage() {
         <div className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Fostering All-Round Development</h2>
           <p className="text-center mb-12 max-w-2xl mx-auto">
-            At St. Thomas Group of Educational Institutions, we believe that education goes beyond the classroom. Our schools offer a variety of extra-curricular activities that nurture the physical, mental, and emotional growth of our students.
+            At St. Thomas Hr. Sec. School, Rozibeg, we believe that education goes beyond the classroom. Our schools offer a variety of extra-curricular activities that nurture the physical, mental, and emotional growth of our students.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-blue-100 p-6 rounded-lg shadow-md">

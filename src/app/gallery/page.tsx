@@ -138,11 +138,10 @@ export default function GalleryPage() {
 
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold mb-8 text-center text-gray-800">
-          Experience St. Thomas Through Our Lens
+          Experience St. Thomas Hr. Sec. School, Rozibeg Through Our Lens
         </h2>
         <p className="text-center mb-12 max-w-2xl mx-auto text-gray-600">
-          Take a visual tour of life at St. Thomas Group of Educational
-          Institutions. Our photo gallery showcases the vibrancy and diversity
+          Take a visual tour of life at St. Thomas Hr. Sec. School, Rozibeg. Our photo gallery showcases the vibrancy and diversity
           of student experiences.
         </p>
 

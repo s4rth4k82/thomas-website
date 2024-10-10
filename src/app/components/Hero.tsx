@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-pulse">
           {/* <span className="text-stroke"></span><br /> */}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-red-500">St. Thomas Group of Educational Institutions</span>
+          <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-red-500">St. Thomas Hr. Sec. School, Rozibeg</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 float">Illuminating Futures Since 1986</p>
         <Link href="/about" className="glassmorphism hover-bright bg-yellow-500 text-gray-900 font-bold py-3 px-8 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105">

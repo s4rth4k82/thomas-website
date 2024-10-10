@@ -8,7 +8,7 @@ export default function HomePage() {
       <Hero />
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Welcome to St. Thomas Group of Educational Institutions</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Welcome to St. Thomas Hr. Sec. School, Rozibeg</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-yellow-100 to-yellow-200 p-6 rounded-lg shadow-md hover-grow">
               <FaGraduationCap className="text-4xl text-yellow-600 mb-4" />
