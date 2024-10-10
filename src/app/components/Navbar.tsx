@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <Image width={200} height={50} src="/images/logo-top.png" alt="St. Thomas Logo" />
+              <Image width={200} height={50} src="/images/logo.png" alt="St. Thomas Logo" />
             </Link>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">

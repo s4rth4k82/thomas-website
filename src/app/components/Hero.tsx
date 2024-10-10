@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <div className="relative bg-cover bg-center h-screen" style={{backgroundImage: "url('/images/indian-school-bg.jpg')"}}>
+    <div className="relative bg-cover bg-center h-screen" style={{backgroundImage: "url('/images/bg-image.jpeg')"}}>
       <div className="absolute inset-0 bg-[#58A6D6] bg-opacity-50"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
         <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-pulse">

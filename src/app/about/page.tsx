@@ -77,7 +77,7 @@ export default function AboutPage() {
               { name: "His Excellency Most Rev. Dr. Thomas Mar Anthonios", role: "Patron", image: "/images/Gurgaon.jpg" },
               { name: "Rev. Dr. Reni Mudampally", role: "Director", image: "/images/Principal.jpg" },
               { name: "Rev. Fr. Jinu Arappurackal", role: "Bursar", image: "/images/Fr.Jinu.jpg" },
-              { name: "Mrs. Betty Jacob", role: "Principal", image: "/images/Gurgaon.jpg" },
+              { name: "Mrs. Betty Jacob", role: "Principal", image: "/images/betty.png" },
             ].map((leader, index) => (
               <div key={index} className="text-center hover-grow">
                 <div className="relative w-48 h-48 mx-auto mb-4 overflow-hidden rounded-full">

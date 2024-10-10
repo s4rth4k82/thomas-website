@@ -11,57 +11,79 @@ import "slick-carousel/slick/slick-theme.css";
 
 const images = [
   {
-    src: "/images/gallery/kids1.jpg",
+    src: "/images/gallery/1.jpeg",
     alt: "Students in classroom",
     category: "Campus Life",
   },
   {
-    src: "/images/gallery/kids1.jpg",
+    src: "/images/gallery/2.jpeg",
     alt: "School grounds",
     category: "Campus Life",
   },
   {
-    src: "/images/event-1.jpg",
+    src: "/images/gallery/3.jpeg",
     alt: "Annual sports day",
     category: "Events & Competitions",
   },
   {
-    src: "/images/event-2.jpg",
+    src: "/images/gallery/4.jpeg",
     alt: "Science fair",
     category: "Events & Competitions",
   },
   {
-    src: "/images/achievement-1.jpg",
+    src: "/images/gallery/4.jpeg",
     alt: "Students with academic awards",
     category: "Achievements",
   },
   {
-    src: "/images/achievement-2.jpg",
+    src: "/images/gallery/5.jpeg",
     alt: "Sports team with trophy",
     category: "Achievements",
   },
   {
-    src: "/images/community-1.jpg",
+    src: "/images/gallery/6.jpeg",
     alt: "Students in community service",
     category: "Community Service",
   },
   {
-    src: "/images/community-2.jpg",
+    src: "/images/gallery/7.jpeg",
     alt: "Tree planting drive",
     category: "Community Service",
   },
   {
-    src: "/images/cultural-1.jpg",
+    src: "/images/gallery/8.jpeg",
     alt: "Traditional dance performance",
     category: "Cultural Events",
   },
   {
-    src: "/images/cultural-2.jpg",
+    src: "/images/gallery/9.jpeg",
     alt: "Art exhibition",
     category: "Cultural Events",
   },
-  { src: "/images/sports-1.jpg", alt: "Cricket match", category: "Sports" },
-  { src: "/images/sports-2.jpg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/10.jpeg", alt: "Cricket match", category: "Sports" },
+  { src: "/images/gallery/11.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/12.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/13.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/14.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/15.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/16.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/17.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/18.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/19.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/20.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/21.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/22.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/23.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/24.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/25.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/26.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/27.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/28.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/29.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/30.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/31.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/32.jpeg", alt: "Yoga session", category: "Sports" },
+  { src: "/images/gallery/33.jpeg", alt: "Yoga session", category: "Sports" },
 ];
 
 type ImageType = {
@@ -83,7 +105,7 @@ export default function GalleryPage() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2000,
   };
 
   const openModal = (image: (typeof images)[0]) => {
