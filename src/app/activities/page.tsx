@@ -21,10 +21,10 @@ export default function ActivitiesPage() {
               <h3 className="text-xl font-semibold mb-4 text-green-800">Cultural Programs</h3>
               <p>Participate in drama, music, and dance competitions to develop creative skills. These programs help students express themselves and build confidence.</p>
             </div>
-            <div className="bg-yellow-100 p-6 rounded-lg shadow-md">
+            {/* <div className="bg-yellow-100 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4 text-yellow-800">Community Service</h3>
               <p>Our students actively participate in various outreach programs that support underprivileged communities, fostering empathy and social responsibility.</p>
-            </div>
+            </div> */}
             <div className="bg-red-100 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4 text-red-800">Academic Clubs</h3>
               <p>Join various academic clubs like the Science Club, Math Club, and Literary Club to explore subjects beyond the curriculum and develop specialized skills.</p>
@@ -43,12 +43,8 @@ export default function ActivitiesPage() {
             <div className="bg-gray-100 p-8 rounded-lg shadow-md">
               <h3 className="text-2xl font-semibold mb-4 text-center">Recent Accolades</h3>
               <ul className="list-disc pl-5 space-y-2">
-                <li>First place in the State Level Science Exhibition</li>
-                <li>Winners of the Inter-School Debate Competition</li>
-                <li>National level recognition in the Math Olympiad</li>
-                <li>Outstanding performance in CBSE Board Exams</li>
-                <li>State Champions in Under-17 Kabaddi Tournament</li>
-                <li>Best School Award for Community Service Initiatives</li>
+                <li>Won National level Karate Championship</li>
+                <li>Winners of the State level Kho-Kho Competition</li>
               </ul>
             </div>
           </div>
