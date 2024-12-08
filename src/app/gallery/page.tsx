@@ -307,9 +307,9 @@ export default function GalleryPage() {
                 <h4 className="text-2xl font-semibold mb-2">
                   {modalImage?.category || "Category"}
                 </h4>
-                <p className="text-gray-600">
-                  {modalImage?.alt || "No description available"}
-                </p>
+               // <p className="text-gray-600">
+            //      {modalImage?.alt || "No description available"}
+               // </p>
               </div>
             </motion.div>
           </motion.div>
