@@ -210,7 +210,7 @@ export default function GalleryPage() {
                     <h3 className="text-2xl font-semibold text-white">
                       {image.category}
                     </h3>
-                    <p className="text-lg text-gray-200">{image.alt}</p>
+                    
                   </div>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export default function GalleryPage() {
                     <h4 className="text-xl font-semibold text-white mb-2">
                       {image.category}
                     </h4>
-                    <p className="text-sm text-gray-200">{image.alt}</p>
+                    
                   </div>
                 </div>
               </motion.div>
